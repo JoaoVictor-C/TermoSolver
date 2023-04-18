@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://wordle-solver.webrace.com/ -->
+<html lang="pt-br" data-lt-installed="true">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="A Wordle Solver">
+  <link rel="stylesheet" href="./Wordle Solver_files/css">
+  <link rel="manifest" href="https://wordle-solver.webrace.com/manifest.json">
+  <script async src="./Wordle%20Solver_files/js"></script>
+  <script>
+  function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-210014760-1")
+  </script>
+  <title>Solucionador do Termo</title>
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <script defer="defer" src="./Wordle%20Solver_files/main.80749052.js.download"></script>
+  <link href="./Wordle Solver_files/main.0ded8e54.css" rel="stylesheet">
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css" data-s=""></style>
+</head>
+<body>
+  <header>
+    <p style="text-align: center;">Desenvolvido por <a href="https://github.com/TheKeySpammer">TheKeySpammer</a> e refeito para português por <a href="https://github.com/JoaoVictor-C">João Victor</a></p>
+  </header>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <main class="MuiContainer-root MuiContainer-maxWidthXs css-hltdia">
+      <div class="MuiBox-root css-dvxtzn">
+        <div class="mt-8 MuiBox-root css-0">
+          <div class="css-78jar2">
+            <div class="MuiBox-root css-0">
+              <div class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1y46fnt">
+                Solucionador do Termo
+              </div>
+              <div class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-12vf0ge">
+                Solve wordle puzzles using this simple tool.
+              </div>
+            </div>
+            <div class="MuiBox-root css-1v6lj4c">
+              <div class="MuiBox-root css-1gtfl7l">
+                <div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
+                  <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled css-u9osun" data-shrink="true" id="word-length-label">Word Length</label>
+                  <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-fvipm8">
+                    <div tabindex="0" role="button" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="word-length-label word-length-select" id="word-length-select" class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-182didf">
+                      5
+                    </div><input aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput css-1k3x8v3" value="5"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1636szt" focusable="false" aria-hidden="true" viewbox="0 0 24 24" data-testid="ArrowDropDownIcon">
+                    <path d="M7 10l5 5 5-5z"></path></svg>
+                    <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                      <legend class="css-1in441m"><span>Word Length</span></legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1ujsas3" tabindex="0" type="button"><span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewbox="0 0 24 24" data-testid="ReplayIcon">
+              <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"></path></svg></span>Reset</button>
+            </div>
+            <div class="MuiBox-root css-0">
+              <h6 class="MuiTypography-root MuiTypography-h6 css-1anx036">Current Guess</h6>
+              <p class="MuiTypography-root MuiTypography-body1 css-17vjrw7">Select guess type (Green, Gray, Yellow)</p>
+              <div role="group" class="MuiButtonGroup-root MuiButtonGroup-outlined css-3fjwge">
+                <div class="flex flex-col justify-center items-center MuiBox-root css-0">
+                  <div class="MuiFormControl-root MuiTextField-root css-i44wyl">
+                    <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorInfo MuiInputBase-formControl css-gbd8pe">
+                      <input aria-invalid="false" id=":r0:" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value="" style="text-align: center; font-size: 20px; padding: 12px 4px;">
+                      <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                        <legend class="css-hdw1oc"><span class="notranslate">​</span></legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="MuiBox-root css-grhwg0"></div>
+                </div>
+                <div class="flex flex-col justify-center items-center MuiBox-root css-0">
+                  <div class="MuiFormControl-root MuiTextField-root css-i44wyl">
+                    <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorInfo MuiInputBase-formControl css-gbd8pe">
+                      <input aria-invalid="false" id=":r1:" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value="" style="text-align: center; font-size: 20px; padding: 12px 4px;">
+                      <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                        <legend class="css-hdw1oc"><span class="notranslate">​</span></legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="MuiBox-root css-grhwg0"></div>
+                </div>
+                <div class="flex flex-col justify-center items-center MuiBox-root css-0">
+                  <div class="MuiFormControl-root MuiTextField-root css-i44wyl">
+                    <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorInfo MuiInputBase-formControl css-gbd8pe">
+                      <input aria-invalid="false" id=":r2:" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value="" style="text-align: center; font-size: 20px; padding: 12px 4px;">
+                      <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                        <legend class="css-hdw1oc"><span class="notranslate">​</span></legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="MuiBox-root css-grhwg0"></div>
+                </div>
+                <div class="flex flex-col justify-center items-center MuiBox-root css-0">
+                  <div class="MuiFormControl-root MuiTextField-root css-i44wyl">
+                    <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorInfo MuiInputBase-formControl css-gbd8pe">
+                      <input aria-invalid="false" id=":r3:" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value="" style="text-align: center; font-size: 20px; padding: 12px 4px;">
+                      <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                        <legend class="css-hdw1oc"><span class="notranslate">​</span></legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="MuiBox-root css-grhwg0"></div>
+                </div>
+                <div class="flex flex-col justify-center items-center MuiBox-root css-0">
+                  <div class="MuiFormControl-root MuiTextField-root css-i44wyl">
+                    <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorInfo MuiInputBase-formControl css-gbd8pe">
+                      <input aria-invalid="false" id=":r4:" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value="" style="text-align: center; font-size: 20px; padding: 12px 4px;">
+                      <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                        <legend class="css-hdw1oc"><span class="notranslate">​</span></legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="MuiBox-root css-grhwg0"></div>
+                </div>
+              </div>
+              <div class="flex items-center MuiBox-root css-0">
+                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mr-2 text-gray-400 relative css-u42e84" focusable="false" aria-hidden="true" viewbox="0 0 24 24" data-testid="HelpIcon">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg><span class="MuiTypography-root MuiTypography-caption text-gray-400 css-1ch5r0c">Click on the gray boxes to change the color of letters</span>
+              </div>
+            </div>
+            <div class="MuiBox-root css-4cxybv">
+              <div class="MuiFormControl-root MuiTextField-root w-full css-i44wyl">
+                <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorSecondary css-c2dakw" data-shrink="false" for=":r5:" id=":r5:-label">Enter Bad Letters</label>
+                <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-7srjgk">
+                  <input aria-invalid="false" id=":r5:" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng" value="">
+                  <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                    <legend class="css-1ftyaf0"><span>Enter Bad Letters</span></legend>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="flex flex-wrap justify-center items-center MuiBox-root css-0"></div>
+            </div>
+          </div>
+        </div>
+        <div class="MuiBox-root css-0">
+          <div class="css-78jar2">
+            <div class="MuiBox-root css-0">
+              <h6 class="MuiTypography-root MuiTypography-h6 css-1avk4q9">Good Starting Guess</h6>
+              <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-gdvwbn">
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-4xkoi8">
+                  <div class="css-11x5x56">
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">about</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">admit</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">after</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">again</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">agent</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">agree</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">allow</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">along</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">apart</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">apply</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">argue</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">aware</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">awful</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">basis</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">begin</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">birth</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">black</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">bloke</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">blood</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">board</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">break</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">brief</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">bring</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">build</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">carry</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">catch</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">cause</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">chair</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">cheap</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">check</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">child</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">claim</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">class</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">clean</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">clear</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">clock</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">close</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">color</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">could</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">count</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">court</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">cover</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">cross</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">doubt</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">dress</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">drink</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">drive</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">early</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">eight</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">elect</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">enjoy</p>
+                  </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-4xkoi8">
+                  <div class="css-11x5x56">
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">enter</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">equal</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">every</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">exact</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">exist</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">extra</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">field</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">fight</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">final</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">first</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">floor</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">force</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">front</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">glass</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">grand</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">grant</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">great</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">green</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">group</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">guess</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">happy</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">heart</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">heavy</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">horse</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">house</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">hullo</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">issue</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">jesus</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">judge</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">knock</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">large</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">laugh</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">learn</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">leave</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">level</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">light</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">limit</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">local</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">lunch</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">major</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">marry</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">match</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">maybe</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">might</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">minus</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">money</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">month</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">music</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">never</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">night</p>
+                  </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-4xkoi8">
+                  <div class="css-11x5x56">
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">north</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">offer</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">often</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">order</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">other</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">ought</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">paint</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">paper</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">party</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">pence</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">piece</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">place</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">point</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">pound</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">power</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">press</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">price</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">print</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">quick</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">quiet</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">quite</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">radio</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">raise</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">range</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">ready</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">refer</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">right</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">round</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">score</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">sense</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">serve</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">seven</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">shall</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">share</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">sheet</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">shoot</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">short</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">since</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">sleep</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">small</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">smoke</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">sorry</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">sound</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">south</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">space</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">speak</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">speed</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">spell</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">spend</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">staff</p>
+                  </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-4xkoi8">
+                  <div class="css-11x5x56">
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">stage</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">stand</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">start</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">state</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">stick</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">still</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">story</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">study</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">stuff</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">table</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">teach</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">thank</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">there</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">thing</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">think</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">three</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">throw</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">today</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">total</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">touch</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">trade</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">train</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">treat</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">trust</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">under</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">union</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">unite</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">until</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">usual</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">value</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">video</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">visit</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">waste</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">watch</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">water</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">weigh</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">where</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">which</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">while</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">white</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">whole</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">woman</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">world</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">worry</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">worse</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">worth</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">would</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">write</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">wrong</p>
+                    <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">young</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
